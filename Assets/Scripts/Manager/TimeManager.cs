@@ -1,4 +1,4 @@
-using ReadOnlyDrawer;
+using Sirenix.OdinInspector;
 using System.Collections;
 using UnityEngine;
 
@@ -56,8 +56,6 @@ public class TimeManager : StaticMonoBehaviour<TimeManager>
 
     public void UnpauseTime()
     {
-        Debug.Log("UNPAUSE TIME CALLED. CURRENT PAUSE STACK: " + pauseStack);
-
         if (Time.timeScale != 0f || pauseStack == 0f)
             return;
 

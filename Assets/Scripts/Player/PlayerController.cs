@@ -1,9 +1,9 @@
 ﻿using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
-using ReadOnlyAttribute = ReadOnlyDrawer.ReadOnlyAttribute;
 
 public class PlayerController : StaticMonoBehaviour<PlayerController>
 {
@@ -26,6 +26,8 @@ public class PlayerController : StaticMonoBehaviour<PlayerController>
     [SerializeField] private float dashDuration = 0.3f;
     [SerializeField] private float dashCooldown = 0.5f;
     [SerializeField] private AnimationCurve dashCurve;
+    [SerializeField] private GameObject grounddashEffectObject;
+    [SerializeField] private GameObject airdashEffectObject;
 
     [Header("NormalAttackSettings")]
     [SerializeField] private float normalAttackInterval = 0.3f;
@@ -202,9 +204,8 @@ public class PlayerController : StaticMonoBehaviour<PlayerController>
     protected float normalAttackTimer = 0f;
 
     protected float HurtTimer = 0f;
-    protected float immobilityAternalTimer = 0f;
 
-    const float walljumpControlDisable = 0.25f;
+    const float walljumpControlDisable = 0.2f;
     const float attackControlDisable = 0.2f;
 
     bool prevFrameGrounded = false;
@@ -468,11 +469,15 @@ public class PlayerController : StaticMonoBehaviour<PlayerController>
                     player.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
                     player.UpdateHits();
                 }
+
                 player.rBody.linearVelocityX = Mathf.Lerp(player.rBody.linearVelocityX, movementInput.x * player.moveSpeed, player.moveDamping);
             }
             else
             {
-                player.rBody.linearVelocityX = Mathf.Lerp(player.rBody.linearVelocityX, 0f, player.moveDamping);
+                if (player.Grounded)
+                {
+                    player.rBody.linearVelocityX = Mathf.Lerp(player.rBody.linearVelocityX, 0f, player.moveDamping);
+                }
             }
         }
 
@@ -500,6 +505,11 @@ public class PlayerController : StaticMonoBehaviour<PlayerController>
 
         public override void OnStateEnter(PlayerController player)
         {
+            if (player.Grounded)
+                Instantiate(player.grounddashEffectObject, player.RCO_Foot_L.position, player.transform.rotation);
+            else
+                Instantiate(player.airdashEffectObject, player.transform.position, player.transform.rotation);
+
             base.OnStateEnter(player);
             player.rBody.bodyType = RigidbodyType2D.Kinematic;
 
@@ -558,6 +568,8 @@ public class PlayerController : StaticMonoBehaviour<PlayerController>
 
         public override void OnStateEnter(PlayerController player)
         {
+
+
             player.rBody.bodyType = RigidbodyType2D.Static;
 
             List<Collider2D> col = new List<Collider2D>();
