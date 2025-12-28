@@ -4,7 +4,8 @@
 플랫포머 액션 미니프로젝트  
 
 
-개발 : 주대현
+개발 : 주대현  
+
 Developer page : https://badtoast.notion.site/developer-info?source=copy_link
 
 
