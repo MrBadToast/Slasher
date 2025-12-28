@@ -1,7 +1,8 @@
 # SLASHER
 
  111퍼센트 클라이언트 입사 과제
-플랫포머 액션 미니프로젝트
+플랫포머 액션 미니프로젝트  
+
 
 개발 : 주대현
 Developer page : https://badtoast.notion.site/developer-info?source=copy_link
@@ -16,7 +17,8 @@ Developer page : https://badtoast.notion.site/developer-info?source=copy_link
 
 https://github.com/MrBadToast/Slasher_Build
 
-## 프로젝트 내용
+## 프로젝트 내용  
+
 **유니티 버전**
 Unity 6000.0.60f
 
@@ -32,17 +34,23 @@ URP
 
 ### Sprites 
 
-https://ozzbit-games.itch.io/action-platformer-character-template
-https://chimplement.itch.io/little-laboratory
-https://rvros.itch.io/pixel-art-animated-slime
-https://bdragon1727.itch.io/basic-pixel-health-bar-and-scroll-bar
+https://ozzbit-games.itch.io/action-platformer-character-template  
+
+https://chimplement.itch.io/little-laboratory  
+
+https://rvros.itch.io/pixel-art-animated-slime  
+
+https://bdragon1727.itch.io/basic-pixel-health-bar-and-scroll-bar  
+
 
 ### Music 
 
-Loading screen loop - Brandon Morris
+Loading screen loop - Brandon Morris  
+
 https://opengameart.org/content/loading-screen-loop
 
-Open Warfare - Ruskerdax
+Open Warfare - Ruskerdax  
+
 https://opengameart.org/content/open-warfare
 
  ### Font
