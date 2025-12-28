@@ -13,11 +13,11 @@ TagManager:
   - UI
   - CameraBounds
   - Player
-  - 
-  - 
-  - 
-  - 
-  - 
+  - HalfGround
+  - Enemy
+  - Projectile
+  - AttackRange
+  - Trigger
   - 
   - 
   - 
@@ -40,6 +40,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 2310222057
     locked: 0
   m_RenderingLayers:
   - Default

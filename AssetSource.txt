@@ -2,7 +2,8 @@
 
 https://ozzbit-games.itch.io/action-platformer-character-template
 https://chimplement.itch.io/little-laboratory
-
+https://rvros.itch.io/pixel-art-animated-slime
+https://bdragon1727.itch.io/basic-pixel-health-bar-and-scroll-bar
 
 ========= Music ============
 
@@ -11,3 +12,4 @@ https://opengameart.org/content/loading-screen-loop
 
 Open Warfare - Ruskerdax
 https://opengameart.org/content/open-warfare
+
