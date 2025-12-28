@@ -1,22 +1,28 @@
 # SLASHER
 
- 111퍼센트 클라이언트 입사 과제
+  
+111퍼센트 클라이언트 입사 과제  
+
 플랫포머 액션 미니프로젝트  
 
 
 개발 : 주대현  
 
-Developer page : https://badtoast.notion.site/developer-info?source=copy_link
+Developer page : https://badtoast.notion.site/developer-info?source=copy_link  
 
 
 
 ## 플레이 영상
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/lDuqSBpg0LU/0.jpg)](http://www.youtube.com/watch?v=lDuqSBpg0LU "Video Title")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/lDuqSBpg0LU/0.jpg)](http://www.youtube.com/watch?v=lDuqSBpg0LU "Video Title")  
+
+
 
 ## 빌드
 
-https://github.com/MrBadToast/Slasher_Build
+https://github.com/MrBadToast/Slasher_Build  
+
+
 
 ## 프로젝트 내용  
 
@@ -27,7 +33,8 @@ Unity 6000.0.60f
 URP
 
 **추가사항**
-게임패드 컨트롤 가능
+게임패드 컨트롤 가능  
+
 
 
 
